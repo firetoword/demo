@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.cong.mapper.TestMapper">
+
+    <select id="getAllTest" parameterType="String" resultType="com.example.cong.bean.Test">
+        SELECT * FROM test
+    </select>
+    <!--collection 一对多关联查询 -->
+  <!--  <select id="getClass2" parameterType="int"
+            resultMap="ClassesResultMap2">
+        select * from class c,teacher t,student s where c.teacher_id=t.t_id
+        and c.c_id=s.class_id and c.c_id=#{id}
+    </select>
+    <resultMap type="com.lcb.user.Classes" id="ClassesResultMap2">
+        <id property="id" column="c_id"/>
+        <result property="name" column="c_name"/>
+        <association property="teacher"
+                     javaType="com.lcb.user.Teacher">
+            <id property="id" column="t_id"/>
+            <result property="name" column="t_name"/>
+        </association>
+        <collection property="student"
+                    ofType="com.lcb.user.Student">
+            <id property="id" column="s_id"/>
+            <result property="name" column="s_name"/>
+        </collection>
+    </resultMap>-->
+
+</mapper>

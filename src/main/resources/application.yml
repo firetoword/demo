@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    name: test
+    url: jdbc:mysql://127.0.0.1:3306/cong?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml
+#  type-aliases-package: com.example.cong.bean
+
+#zk:
+#  ddress: 127.0.0.1:2181
+#
+#rpc:
+#  port: 19000
+#  protocol: javas
+#  zk.address=127.0.0.1:2181
+#
+#  rpc.port=19000
+#  rpc.protocol=javas

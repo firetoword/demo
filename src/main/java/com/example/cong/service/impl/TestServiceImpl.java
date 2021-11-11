@@ -19,6 +19,7 @@ public class TestServiceImpl implements TestService {
     public List<Test> getAllTest() throws Exception {
         //1
         //2
+        //3
         return testMapper.getAllTest();
     }
 }

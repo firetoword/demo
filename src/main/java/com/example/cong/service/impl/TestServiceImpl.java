@@ -17,6 +17,8 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public List<Test> getAllTest() throws Exception {
+        //1
+
         return testMapper.getAllTest();
     }
 }
